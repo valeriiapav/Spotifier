@@ -1,0 +1,72 @@
+# macOS system files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Xcode project files
+*.xcworkspace/
+*.xcuserstate
+*.xcuserdata/
+
+# Build artifacts
+DerivedData/
+Build/
+
+# Dependency managers
+Pods/
+Carthage/
+Carthage/Checkouts
+Carthage/Build
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# Fastlane
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/
+fastlane/test_output/
+
+# Archives
+*.ipa
+*.dSYM.zip
+*.xcarchive/
+
+# Generated files
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# SwiftPM Xcode project
+*.xcodeproj/project.xcworkspace/
+
+# User-specific schemes
+xcshareddata/
+xcuserdata/
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*.swo
+*.swn
+
+# Environment variables
+.env
+.env.local
+.env.*
+
+# Firebase/GoogleService
+GoogleService-Info.plist
+
+# Other IDEs and editor files
+.idea/
+.vscode/
+
+# Playgrounds
+playground.xcworkspace/
+Sources/
+UserPlaygroundConfig.plist
