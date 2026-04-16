@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "title": "Nevermind",
+        "subtitle": "",
+        "cover_name": "Nirvana - Nevermind",
+        "songs": [
+            {
+                "id": 1,
+                "title": "Something in the Way",
+                "artist": {
+                    "id": 1,
+                    "name": "Nirvana",
+                    "image_name": "Nirvana - Nevermind"
+                },
+                "duration_seconds": 350,
+                "artwork_name": "Nirvana - Nevermind",
+                "audio_file_name": null
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "title": "The Doors",
+        "subtitle": "The Doors",
+        "cover_name": "The Doors - The Doors",
+        "songs": [
+            {
+                "id": 2,
+                "title": "The End",
+                "artist": {
+                    "id": 2,
+                    "name": "The Doors",
+                    "image_name": "The Doors - The Doors"
+                },
+                "duration_seconds": 350,
+                "artwork_name": "The Doors - The Doors",
+                "audio_file_name": null
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Шлях",
+        "subtitle": "",
+        "cover_name": "DK Energetyk - Schlyah",
+        "songs": [
+            {
+                "id": 3,
+                "title": "Шлях ч.2",
+                "artist": {
+                    "id": 3,
+                    "name": "DK Energetyk",
+                    "image_name": "DK Energetyk - Schlyah"
+                },
+                "duration_seconds": 350,
+                "artwork_name": "DK Energetyk - Schlyah",
+                "audio_file_name": null
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "title": "Mechanical Animals",
+        "subtitle": "",
+        "cover_name": "MM - Mechanical Animals",
+        "songs": [
+            {
+                "id": 4,
+                "title": "The Dope Show",
+                "artist": {
+                    "id": 4,
+                    "name": "Marilyn Manson",
+                    "image_name": "MM - Mechanical Animals"
+                },
+                "duration_seconds": 350,
+                "artwork_name": "MM - Mechanical Animals",
+                "audio_file_name": null
+            }
+        ]
+    }
+]

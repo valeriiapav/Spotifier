@@ -6,11 +6,19 @@
 //
 
 import Foundation
+import SwiftUI
 
-struct Playlist: Identifiable {
-    let id: UUID
+struct Playlist: Identifiable, Codable {
+    let id: Int
     let title: String
     let subtitle: String
-    let coverName: String
     let songs: [Song]
+    let coverName: String
 }
+
+extension Playlist {
+    var cover: Image {
+        Image.assetOrFallback(coverName, fallbackName: "playlist_placeholder")
+    }
+}
+

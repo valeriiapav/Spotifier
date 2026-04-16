@@ -7,11 +7,11 @@
 
 import Foundation
 
-struct Song: Identifiable {
-    let id: UUID
+struct Song: Identifiable, Codable {
+    let id: Int
     let title: String
-    let artist: String
-    let duration: TimeInterval
+    let artist: Artist
+    let durationSeconds: Int
     let artworkName: String
     let audioFileName: String?
 }

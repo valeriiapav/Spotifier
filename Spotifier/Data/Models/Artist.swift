@@ -7,8 +7,8 @@
 
 import Foundation
 
-struct Artist: Identifiable {
-    let id: UUID
+struct Artist: Identifiable, Codable {
+    let id: Int
     let name: String
     let imageName: String
 }

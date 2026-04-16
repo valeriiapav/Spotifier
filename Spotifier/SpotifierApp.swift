@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct SpotifierApp: App {
+    let playlistsManager: PlaylistsManager = PlaylistsManager.shared
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(playlistsManager)
         }
     }
 }

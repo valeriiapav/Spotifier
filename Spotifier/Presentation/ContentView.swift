@@ -8,17 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @EnvironmentObject var playlistsManager: PlaylistsManager
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            Color.backgroundPrimary.ignoresSafeArea(edges: .all)
+            
+            VStack {
+                ForEach(playlistsManager.playlists) { playlist in
+                    playlist.cover
+                }
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
 #Preview {
     ContentView()
+        .globalInjection()
 }
