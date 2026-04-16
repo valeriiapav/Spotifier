@@ -8,18 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
-    @EnvironmentObject var playlistsManager: PlaylistsManager
     
     var body: some View {
         ZStack {
             Color.backgroundPrimary.ignoresSafeArea(edges: .all)
             
-            VStack {
-                ForEach(playlistsManager.playlists) { playlist in
-                    playlist.cover
-                }
-            }
-            .padding()
+            HomeView()
         }
     }
 }

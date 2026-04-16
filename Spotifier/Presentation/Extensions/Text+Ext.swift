@@ -10,11 +10,11 @@ import SwiftUI
 extension Text {
     func applyFontDMSans(size: CGFloat) -> Text {
         return self
-            .font(.custom("DMSans", size: size))
+            .font(.custom("DMSans-9ptRegular", size: size))
     }
     
     func applyFontDMSansItalic(size: CGFloat) -> Text {
         return self
-            .font(.custom("DMSans-Italic", size: size))
+            .font(.custom("DMSans-9ptItalic", size: size))
     }
 }
