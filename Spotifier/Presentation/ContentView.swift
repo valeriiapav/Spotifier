@@ -8,12 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tabs = .home
     
     var body: some View {
         ZStack {
             Color.backgroundPrimary.ignoresSafeArea(edges: .all)
             
-            HomeView()
+            TabView(selection: $selectedTab) {
+                ForEach(Tabs.allCases, id: \.self) { tab in
+                    NavigationStack {
+                        tab.buildView()
+                    }
+                    .tabItem {
+                        Label(tab.label, systemImage: tab.iconSystemName)
+                    }
+                    .tag(tab)
+                }
+            }
         }
     }
 }
